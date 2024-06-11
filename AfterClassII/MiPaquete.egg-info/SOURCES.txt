@@ -1,0 +1,7 @@
+setup.py
+MiPaquete.egg-info/PKG-INFO
+MiPaquete.egg-info/SOURCES.txt
+MiPaquete.egg-info/dependency_links.txt
+MiPaquete.egg-info/top_level.txt
+mipack01/__init__.py
+mipack01/modulo.py
