@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comision 57810</title>
+</head>
+<body>
+    <h1>Esta es la clase 18 de Python - Django Portfolio II</h1>
+    <h2>DTL Es el lenguaje de Django para Plantillas</h2>
+
+    <h2>Hoy es {{hoy}}</h2>
+    <hr>
+    <h2>Nombre: {{nombre}} {{apellido}}</h2>
+    <h3>Nos quedan 7 clases de Django</h3>
+    <hr>
+    <p>Recomendacion: Ver algun tutorial de HTML / CSS</p>
+
+    <h2>Notas de {{apellido}}, {{nombre}}</h2>
+
+    {% for nota in notas %}
+
+        
+        {% if nota > 6 %}
+            <p style="color:green">Es una nota aprobada: {{nota}}</p>    
+        {% else %}
+            <p style="color:red">Es una nota desaprobada: {{nota}}</p>    
+        {% endif %}
+            
+        
+    {% endfor %}
+
+</body>
+</html>
