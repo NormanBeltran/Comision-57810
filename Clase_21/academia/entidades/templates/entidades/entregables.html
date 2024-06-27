@@ -1,0 +1,31 @@
+{% extends "entidades/index.html" %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Entregables</h1>                                
+{% endblock titulo %}
+
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Fecha Entrega</th>
+            <th>Entregado</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for p in entregables  %}
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.fechaEntrega }}</td>
+            <td>{{ p.entregado }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}
+    
