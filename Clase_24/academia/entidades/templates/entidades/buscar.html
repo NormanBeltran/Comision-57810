@@ -1,0 +1,19 @@
+{% extends "entidades/index.html" %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Buscar Cursos</h1>                                
+{% endblock titulo %}
+
+
+{% block contenido %}   
+
+<form action="{% url 'encontrarCursos' %}" method="get">
+    {% csrf_token %}
+    <table>
+        <p>Ingrese patron de busqueda: <input type="text" name="buscar" id="buscar"></p>
+    </table>
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock contenido %}
